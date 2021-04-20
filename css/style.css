@@ -1,0 +1,50 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 50px;
+    cursor: pointer;
+    color: #2d3f50;
+}
+
+.images {
+    padding: 5%;
+}
+
+.circles {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 999px;
+    padding: 20px;
+}
+
+.circle {
+    color: white;
+    margin: 0 10px;
+}
+
+.circle.active {
+    color: #007cff;
+}
