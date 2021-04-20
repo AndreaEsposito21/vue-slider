@@ -22,22 +22,22 @@
 
             <!-- Slider -->
             <div class="slider">
-                <div class="arrow left">
+                <div class="arrow" @click="prevImage">
                     <i class="fas fa-chevron-left"></i>
                 </div>
         
                 <div class="images">
-                    <img src="img/campagna.jpg" alt="">
+                    <img :src="arrayImages[activeImage]" alt="">
                 </div>
         
-                <div class="arrow right">
+                <div class="arrow" @click="nextImage">
                     <i class="fas fa-chevron-right"></i>
                 </div>
             </div>
             <!-- End Slider -->
 
             <div class="circles">
-                <span class="circle active">
+                <span v-for="(image, index) in arrayImages" class="circle" :class="{ 'active': index == activeImage}">
                     <i class="fas fa-circle"></i>
                 </span>
             </div>
